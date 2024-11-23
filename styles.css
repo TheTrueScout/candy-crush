@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(8, 2rem);
+  grid-template-rows: repeat(8, 2rem);
+  gap: 0.05rem;
+  outline: 4px solid black;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+
+.cell {
+  background-color: rgb(235, 231, 188);
+  border-radius: 0.2rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.cell.selected {
+  border: 2px solid white;
+  box-shadow: 0 0 10px white;
+}
